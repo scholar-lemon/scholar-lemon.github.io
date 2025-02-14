@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AR.js Demo</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/3.3.2/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+<a-scene embedded arjs>
+    <!-- 添加一个Marker -->
+    <a-marker preset="hiro">
+        <!-- 在Marker上添加一个3D模型 -->
+        <a-box position="0 0.5 0" material="color: yellow;"></a-box>
+    </a-marker>
+    <!-- 在没有Marker时添加一个纯黑背景 -->
+    <a-entity camera></a-entity>
+</a-scene>
+</body>
+</html>
